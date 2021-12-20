@@ -79,6 +79,44 @@ header .logo img {
     font-weight: 600;
 }
 
+@media(max-width: 35em) {
+    header .toggle {
+        position: relative;
+        width: 50px;
+        margin-left: -100px;
+        cursor: pointer;
+        z-index: 10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav li a {
+        font-size: 1em;
+        color: whitesmoke;
+        letter-spacing: 0.5em;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: 600;
+    }
+    .nav {
+        display: none;
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        z-index: 9;
+        top: 0;
+        left: 0;
+        padding-right: 10px;
+        padding: min(30vh, 10em) 2em;
+        gap: 1em;
+        background: #120e0f url(family.png);
+        background-position: center;
+        background-size: 40%;
+        background-repeat: no-repeat;
+    }
+}
+
 
 /*Hero Section*/
 
@@ -144,4 +182,21 @@ header .logo img {
 
 .image-box img {
     width: 110%;
+}
+
+@media(max-width: 903px){
+    .content{
+        flex-direction: column-reverse;
+    }
+
+    .text-box{
+        flex-basis: 100%;
+        margin-top: 50px;
+        margin-left: -60px;
+    }
+
+    .image-box{
+        flex-basis: 100%;
+        margin-left: -60px;
+    }
 }
